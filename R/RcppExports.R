@@ -6,9 +6,20 @@
 #' Calculating the double of x, i.e. x times 2
 #' 
 #' @param x A single value.
-#' @return A single value, double of x
+#' @return y A single value, double of x
 #' @export
 timesTwo <- function(x) {
     .Call('testrcpp_timesTwo', PACKAGE = 'testrcpp', x)
+}
+
+#' Example 1 Vector Input Scalar Output
+#' 
+#' Calculate mean of a numeric vector
+#' 
+#' @param x A numeric vector
+#' @return y A double as mean
+#' @export
+meancpp <- function(x) {
+    .Call('testrcpp_meancpp', PACKAGE = 'testrcpp', x)
 }
 

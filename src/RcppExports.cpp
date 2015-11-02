@@ -16,3 +16,14 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// meancpp
+double meancpp(NumericVector x);
+RcppExport SEXP testrcpp_meancpp(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(meancpp(x));
+    return __result;
+END_RCPP
+}

@@ -1,3 +1,3 @@
 #' @useDynLib testrcpp
-#' @importFrom Rcpp sourceCpp
+#' @importFrom Rcpp sourceCpp evalCpp
 NULL

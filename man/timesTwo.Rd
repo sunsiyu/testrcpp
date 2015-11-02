@@ -10,7 +10,7 @@ timesTwo(x)
 \item{x}{A single value.}
 }
 \value{
-A single value, double of x
+y A single value, double of x
 }
 \description{
 Calculating the double of x, i.e. x times 2

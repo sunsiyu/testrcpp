@@ -8,6 +8,7 @@ Maintainer: Siyu Sun <sunsiyu.tud@gmail.com>
 Description: Play around with package Rcpp, and implement functions based on 
   book <Advanced R> and <Seamless R and C++ Integration with Rcpp>
 License: GPLv3
-Depends: Rcpp (>= 0.11.6)
+Depends: Rcpp
 LinkingTo: Rcpp
 Imports: Rcpp
+SystemRequirements: C++11

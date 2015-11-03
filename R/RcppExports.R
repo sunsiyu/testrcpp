@@ -23,3 +23,14 @@ meancpp <- function(x) {
     .Call('testrcpp_meancpp', PACKAGE = 'testrcpp', x)
 }
 
+#' Example 2 Vector Input Vector Output
+#' 
+#' Calculate Euclidean distance
+#' 
+#' @param x A numeric number
+#' @return y A numeric vector
+#' @export
+pdistcpp <- function(x, ys) {
+    .Call('testrcpp_pdistcpp', PACKAGE = 'testrcpp', x, ys)
+}
+

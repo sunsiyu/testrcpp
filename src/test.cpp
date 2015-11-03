@@ -36,3 +36,24 @@ double meancpp(NumericVector x) {
   
   return total/n;
 }
+
+//' Example 2 Vector Input Vector Output
+//' 
+//' Calculate Euclidean distance
+//' 
+//' @param x A numeric number
+//' @return y A numeric vector
+//' @export
+// [[Rcpp::export]]
+NumericVector pdistcpp(double x, NumericVector ys) {
+  
+  int n = ys.size();
+  NumericVector out(n);
+  double total = 0;
+  
+  for (int i = 0; i < n; ++i) {
+    out[i] = sqrt(pow(ys[i] - x, 2.0));
+  }
+  
+  return out;
+}

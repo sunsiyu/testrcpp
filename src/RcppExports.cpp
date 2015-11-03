@@ -27,3 +27,15 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// pdistcpp
+NumericVector pdistcpp(double x, NumericVector ys);
+RcppExport SEXP testrcpp_pdistcpp(SEXP xSEXP, SEXP ysSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< double >::type x(xSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type ys(ysSEXP);
+    __result = Rcpp::wrap(pdistcpp(x, ys));
+    return __result;
+END_RCPP
+}
